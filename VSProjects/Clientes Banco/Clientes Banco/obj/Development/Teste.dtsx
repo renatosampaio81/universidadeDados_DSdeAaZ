@@ -1,0 +1,1206 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/28/2021 11:01:34 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-R67F52J"
+  DTS:CreatorName="DESKTOP-R67F52J\rsada"
+  DTS:DTSID="{F5B3D074-53DA-4E0C-916B-D80227038580}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{26C0F762-3F35-43C6-B1FD-F5574935BD64}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Clientes Banco.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{49AA94EA-7F7C-4ED4-BBFA-78C631E8F0F0}"
+      DTS:ObjectName="Clientes Banco.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\20210423 Clientes Banco\2 - Dados Preparados\Clientes Banco.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer ID"
+              DTS:DTSID="{89AD71A8-97C9-4A50-9D0C-2AC2281F6C36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{54C4E10D-D894-46B9-B451-5D0BBAE758A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Surname"
+              DTS:DTSID="{4B15BCBF-4B04-414D-A4D3-59468127D431}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{F6A1F1DF-8496-4F3B-A0D9-6C628D438E44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{AC7D0AA3-7172-42C6-8D94-825E0307E932}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date Joined"
+              DTS:DTSID="{702F6F4E-BBEE-45F7-9BD3-43836E74454C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Balance"
+              DTS:DTSID="{8CAFF14D-0CAB-43A1-8ED3-6FA7EAC00775}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E70D5463-14D7-4536-9913-92F865969707}"
+      DTS:ObjectName="LocalHost.DS_Trainning.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=DS_Trainning;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyUFPhj4qi0iiLHmFrCOA/AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABeTZ7C+AJj2h994sTd/fhagsP3pzmZT+sPC998yJ9HrgAAAAAOgAAAAAIAACAAAAAih6Wz501p7tVN5AU8cwZ9DhX5/YXrIswUK64F7FNMoSAAAAAJNCl/aIjRSqS1oBFk7jyj7ShC5eMFMVMfnWtYii2Ab0AAAADn9U4tv9JgdKxUgWTdL6hnARc0he6CoAxIZwEttAR3c+pz5pqcGFzs8ue+iZDtLecQLxtHuH4rBC5bbhQ803lT</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\20210423 ClientesBanco"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{5d55d5eb-6c42-4736-a35a-fd58f67fa4c5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="20210423 ClientesBanco"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\20210423 ClientesBanco\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20210423 ClientesBanco\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Clientes Banco.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[Clientes Banco.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      name="Customer ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      name="Surname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      name="Age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      name="Date Joined"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      length="1000"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      name="Balance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Date Joined" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Balance" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20210423 ClientesBanco\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[RAW_ClientesBanco_20210423]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20210423 ClientesBanco\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Customer ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Customer ID"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date Joined]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Date Joined"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]" />
+                    <inputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Balance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Balance"
+                      externalMetadataColumnId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      lineageId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idCliente]"
+                      dataType="i4"
+                      name="idCliente" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Date Joined" />
+                    <externalMetadataColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Balance" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20210423 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20210423 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20210423 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20210423 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\20210423 ClientesBanco.Paths[Flat File Source Output]"
+              endId="Package\20210423 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\20210423 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\20210424 ClientesBanco"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{56dde245-43bd-43c2-ac45-6d0daaa5099e}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="20210424 ClientesBanco"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\20210424 ClientesBanco\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20210424 ClientesBanco\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Clientes Banco.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[Clientes Banco.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      name="Customer ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      name="Surname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      name="Age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      name="Date Joined"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      length="1000"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      name="Balance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Date Joined" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Balance" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\20210424 ClientesBanco\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[RAW_ClientesBanco_20210423]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Customer ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Customer ID"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Surname"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date Joined]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Date Joined"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]" />
+                    <inputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Balance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Balance"
+                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idCliente]"
+                      dataType="i4"
+                      name="idCliente" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Surname" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Date Joined" />
+                    <externalMetadataColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Balance" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\20210424 ClientesBanco.Paths[Flat File Source Output]"
+              endId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="194,42"
+          Id="Package\20210423 ClientesBanco"
+          TopLeft="143,43" />
+        <NodeLayout
+          Size="194,42"
+          Id="Package\20210424 ClientesBanco"
+          TopLeft="141,116" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\20210423 ClientesBanco">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\20210423 ClientesBanco\Flat File Source"
+          TopLeft="45,30" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\20210423 ClientesBanco\OLE DB Destination"
+          TopLeft="247,32" />
+        <EdgeLayout
+          Id="Package\20210423 ClientesBanco.Paths[Flat File Source Output]"
+          TopLeft="196,52">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51,0"
+              Start="0,0"
+              End="43.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="43.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\20210424 ClientesBanco">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\20210424 ClientesBanco\Flat File Source"
+          TopLeft="45,30" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\20210424 ClientesBanco\OLE DB Destination"
+          TopLeft="247,32" />
+        <EdgeLayout
+          Id="Package\20210424 ClientesBanco.Paths[Flat File Source Output]"
+          TopLeft="196,52">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51,0"
+              Start="0,0"
+              End="43.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="43.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
