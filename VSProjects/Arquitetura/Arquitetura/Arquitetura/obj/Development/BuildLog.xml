@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
-    <Name>Clientes Banco</Name>
-    <LastWriteTime>2021-09-27T22:34:44.7978286Z</LastWriteTime>
+    <Name>Arquitetura</Name>
+    <LastWriteTime>2021-09-27T23:36:24.2980364Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>01 - ClientesBanco.dtsx</Name>
-      <LastWriteTime>2021-05-07T20:32:53.4797383Z</LastWriteTime>
+      <Name>Arquitetura.dtsx</Name>
+      <LastWriteTime>2021-09-27T23:36:24.2806592Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

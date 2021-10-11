@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Proj_Arquitetura", "Proj_Arquitetura\Proj_Arquitetura.dtproj", "{0CD2C46A-034B-4208-83C9-02047B7DC9BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD2C46A-034B-4208-83C9-02047B7DC9BD}.Development|Default.ActiveCfg = Development
+		{0CD2C46A-034B-4208-83C9-02047B7DC9BD}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FC085E3-16A1-4683-A330-863177222AA7}
+	EndGlobalSection
+EndGlobal

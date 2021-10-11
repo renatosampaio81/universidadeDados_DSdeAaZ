@@ -9,8 +9,7 @@
         <WinAuthUserName />
         <WinAuthDomain />
         <ServerName>.</ServerName>
-        <PathOnServer>/SSISDB/DesenvDS/Clientes Banco</PathOnServer>
-        <StartObjectID>01 - ClientesBanco.dtsx</StartObjectID>
+        <PathOnServer>/SSISDB/DesenvDS/Proj_Arquitetura</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
@@ -19,7 +18,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2021-04-23T10:58:46.2363286Z</Value>
+            <Value xsi:type="xsd:dateTime">2021-10-11T20:16:09.2206451Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationSensitiveValues>
       </Options>

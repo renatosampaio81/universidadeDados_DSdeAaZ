@@ -1,25 +1,26 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="4/23/2021 7:12:47 AM"
+  DTS:CreationDate="9/27/2021 8:25:06 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-R67F52J"
   DTS:CreatorName="DESKTOP-R67F52J\rsada"
-  DTS:DTSID="{A97F2C3D-C08D-4716-A6EE-1D210ACF4F5D}"
+  DTS:DTSID="{7476F6C5-4066-4CB9-823F-3C608E8958A3}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1033"
-  DTS:ObjectName="01 - ClientesBanco"
+  DTS:ObjectName="Arquitetura"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{596A057D-1B0D-494F-934D-AB2E5EFE1033}">
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{3329F043-DCA2-4C3B-8695-F187FFB97004}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Clientes Banco.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{49AA94EA-7F7C-4ED4-BBFA-78C631E8F0F0}"
+      DTS:DTSID="{4150912E-EC00-4387-AA06-5DDBBA2D2240}"
       DTS:ObjectName="Clientes Banco.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -30,7 +31,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Data Science\Data Science A Z\20210423 Clientes Banco\3 - Dados de Upload\20210424\Clientes Banco.csv">
+          DTS:ConnectionString="C:\Data Science\Data Science A Z\20210423 Clientes Banco\3 - Dados de Upload\20210927\Clientes Banco.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +40,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer ID"
-              DTS:DTSID="{D646F8A8-A463-4657-A6B2-3F00E575A60D}"
+              DTS:DTSID="{1ADCF3DE-C144-4AEB-AE70-A20AE2D4E5AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{6BB0547E-9396-4F36-9731-C5D9CE5F9C49}"
+              DTS:DTSID="{B6661C3F-46FD-4152-B603-B07CB5BD960A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Surname"
-              DTS:DTSID="{94B6245D-B13F-44BF-B27C-EA14A4F1AFC0}"
+              DTS:DTSID="{F04A5C03-1762-4862-BC74-987D2DB0DBC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{05043DB8-0329-4409-8E1D-B6630690F714}"
+              DTS:DTSID="{D21B7F76-38F5-46C3-B0ED-BE8572C471D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{AC869F76-3BA7-447E-AD5E-80E4034A9CFB}"
+              DTS:DTSID="{627C53CC-7434-496F-AED4-F2E7B8D8178C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date Joined"
-              DTS:DTSID="{311636F5-4BBE-48A0-B952-7CB306D6CC17}"
+              DTS:DTSID="{5A207236-1324-4DF8-998E-23FFCBC4140C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Balance"
-              DTS:DTSID="{E41F5E27-EF41-47A5-8EDC-D73020D25431}"
+              DTS:DTSID="{34BEA31D-E5D9-4BA3-A793-19324F251C92}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -102,24 +103,35 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{E70D5463-14D7-4536-9913-92F865969707}"
+      DTS:DTSID="{B2166E20-89B7-4031-9A99-5E5DD94144F7}"
       DTS:ObjectName="LocalHost.DS_Trainning.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=DS_Trainning;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=DS_Trainning;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="3OHMj8CeBUU="
+            IV="r0FdJKRjgf+NxB/Fdoib1A==" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+            <CipherData>
+              <CipherValue>r0FdJKRjgf+NxB/Fdoib1C/T1vZ9n1PEyAljnJJQG5EiCITSz3hD+iDFj8P32O8s9t9nWba8TpQb6N5DX5H6bCbzI/mO5wOeDC/R5xzaOdphhrcpAX+GX6w8V/WmU4wVfl3fvkkAJhDR0pphIg72hdejnApl618+lPQUjQSVTz9l5RiEfInIQsrzYYO6EMMy</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\20210424 ClientesBanco"
+      DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{47ade7a1-5b73-402f-b846-dd9e698e3f9e}"
+      DTS:DTSID="{3B49DDA2-CFA5-49C4-9F92-3D1CE4F7AA76}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="20210424 ClientesBanco"
+      DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -127,7 +139,7 @@
           version="1">
           <components>
             <component
-              refId="Package\20210424 ClientesBanco\Flat File Source"
+              refId="Package\Data Flow Task\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -147,25 +159,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\20210424 ClientesBanco\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Clientes Banco.csv]"
                   connectionManagerRefId="Package.ConnectionManagers[Clientes Banco.csv]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]"
                       name="Customer ID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -180,14 +192,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -202,14 +214,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]"
                       name="Surname"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -224,14 +236,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
                       name="Gender"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -246,14 +258,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
                       name="Age"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -268,14 +280,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]"
                       name="Date Joined"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -290,14 +302,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
                       length="1000"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]"
                       name="Balance"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -315,43 +327,43 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Customer ID]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Customer ID" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Surname]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Surname" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Gender" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Age" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date Joined]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Date Joined" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Balance]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -359,27 +371,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -388,7 +400,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\20210424 ClientesBanco\OLE DB Destination"
+              refId="Package\Data Flow Task\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -403,7 +415,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[RAW_ClientesBanco_20210423]</property>
+                  name="OpenRowset">[RAW_ClientesBanco_20210927]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -445,7 +457,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
                   connectionManagerRefId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
                   description="The OLE DB runtime connection used to access the database."
@@ -453,113 +465,109 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Customer ID]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Customer ID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Customer ID"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Customer ID]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Name"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Surname]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Surname]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Surname"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Surname]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Gender"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Age"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Age]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Age]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date Joined]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date Joined]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Date Joined"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date Joined]" />
                     <inputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Balance]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Balance]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="Balance"
-                      externalMetadataColumnId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
-                      lineageId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]" />
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Balance]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idCliente]"
-                      dataType="i4"
-                      name="idCliente" />
-                    <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Customer ID]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Customer ID" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Surname]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Surname" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Gender" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Age" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date Joined]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="Date Joined" />
                     <externalMetadataColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Balance]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -569,22 +577,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\20210424 ClientesBanco\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -595,10 +603,10 @@
           </components>
           <paths>
             <path
-              refId="Package\20210424 ClientesBanco.Paths[Flat File Source Output]"
-              endId="Package\20210424 ClientesBanco\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\20210424 ClientesBanco\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -617,51 +625,62 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="194,42"
-          Id="Package\20210424 ClientesBanco"
-          TopLeft="28,25" />
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="55,20" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\20210424 ClientesBanco">
+    design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
-          Id="Package\20210424 ClientesBanco\OLE DB Destination"
-          TopLeft="247,32" />
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="272,23" />
         <NodeLayout
           Size="151,42"
-          Id="Package\20210424 ClientesBanco\Flat File Source"
-          TopLeft="45,30" />
+          Id="Package\Data Flow Task\Flat File Source"
+          TopLeft="52,20" />
         <EdgeLayout
-          Id="Package\20210424 ClientesBanco.Paths[Flat File Source Output]"
-          TopLeft="196,52">
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="203,42.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="51,0"
+              EndConnector="69,0"
               Start="0,0"
-              End="43.5,0">
+              End="61.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="43.5,0" />
+                    End="61.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
