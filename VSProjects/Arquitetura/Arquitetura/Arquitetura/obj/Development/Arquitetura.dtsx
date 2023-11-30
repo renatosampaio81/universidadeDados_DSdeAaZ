@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="9/27/2021 8:25:06 PM"
+  DTS:CreationDate="11/30/2023 3:26:11 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-R67F52J"
   DTS:CreatorName="DESKTOP-R67F52J\rsada"
-  DTS:DTSID="{7476F6C5-4066-4CB9-823F-3C608E8958A3}"
+  DTS:DTSID="{DBD702EC-8C40-4013-85CC-B3A5CA7C0197}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Arquitetura"
+  DTS:ObjectName="Package2"
   DTS:PackageType="5"
   DTS:VersionBuild="1"
-  DTS:VersionGUID="{153BC976-420E-4150-8CFF-063D08B5CCE4}">
+  DTS:VersionGUID="{D8EFE856-9A26-45A5-B6AB-E9837D49BA9C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Clientes Banco.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{4150912E-EC00-4387-AA06-5DDBBA2D2240}"
+      DTS:DTSID="{63689307-4EA9-4B72-8478-D8EB199575A7}"
       DTS:ObjectName="Clientes Banco.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Data Science\Data Science A Z\20210423 Clientes Banco\3 - Dados de Upload\20210927\Clientes Banco.csv">
+          DTS:ConnectionString="C:\Data Science\universidadeDados_DSdeAaZ\Projetos DataScience\20210423 Clientes Banco\3 - Dados de Upload\20231130\Clientes Banco.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer ID"
-              DTS:DTSID="{1ADCF3DE-C144-4AEB-AE70-A20AE2D4E5AA}"
+              DTS:DTSID="{6A0A6A1E-3DFF-49C4-B5D8-267A481BE3DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{B6661C3F-46FD-4152-B603-B07CB5BD960A}"
+              DTS:DTSID="{F3122392-B603-48B2-A22C-DE85D3C37213}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Surname"
-              DTS:DTSID="{F04A5C03-1762-4862-BC74-987D2DB0DBC4}"
+              DTS:DTSID="{42AA58F6-B80E-41BB-8299-D52FADB9AFE0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{D21B7F76-38F5-46C3-B0ED-BE8572C471D4}"
+              DTS:DTSID="{0A343A50-4498-4DE8-A98B-148D50E24F50}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{627C53CC-7434-496F-AED4-F2E7B8D8178C}"
+              DTS:DTSID="{238F889A-6290-4CCF-8AFE-2BA334AF8EAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date Joined"
-              DTS:DTSID="{5A207236-1324-4DF8-998E-23FFCBC4140C}"
+              DTS:DTSID="{5E490435-9CCC-4D69-98D6-F8E84EC6AD8A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,24 +93,24 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Balance"
-              DTS:DTSID="{34BEA31D-E5D9-4BA3-A793-19324F251C92}"
+              DTS:DTSID="{35DC79C0-89C3-4733-A8BD-D6765A2096F2}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+      DTS:refId="Package.ConnectionManagers[LocalHost.DS_TRAINNING.sa1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{B2166E20-89B7-4031-9A99-5E5DD94144F7}"
-      DTS:ObjectName="LocalHost.DS_Trainning.sa">
+      DTS:DTSID="{33D70E6A-6938-4369-B98D-00847ED90666}"
+      DTS:ObjectName="LocalHost.DS_TRAINNING.sa1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=DS_Trainning;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=.;User ID=sa;Initial Catalog=DS_TRAINNING;Provider=SQLNCLI11.1;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmPDkHtyKQk2UtBzbtqETXAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADh9+l9bj5WfOVygYs++1OAgFwTAnPGqLcpTnheoaVu8QAAAAAOgAAAAAIAACAAAADhiXGg/lY4ioIndFbA4l3OdcUM825TjZPmv2mkJ9tAuyAAAABeXzwp+pFD/Z++ZHk/t32HGZT/RgvXLBjiP64H2HHjZkAAAADed8dPkR+w2RpESin+3gOljJJfLKyG2FdbLydW2A4Cic93wD749LJYQa2VbdW8q0eAhXYD0zf5P2dU+o8TzJ05</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO27MB5Zzs0yWI8TGNmt4ewAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC53f/Y06EqY34hNO273vxf+Yj77t0VnhcXBaudwtz0nwAAAAAOgAAAAAIAACAAAABqJAZr+qe6mSWgV4bOmqjLTm7kGwCWfVYEoJc0daAGByAAAADEzJqbmJqEVYG6DpqPqqVeVFC88m0oflfPIJHzW65Z9kAAAAAQZkr8CGTrsvdxGzumZDZfZv/8gcwOQ9yX7Vr+WsIv8wT6h69SB0qw3rcehwNel7FHkKhNefimokLw9hbsvhkI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -121,7 +121,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{3B49DDA2-CFA5-49C4-9F92-3D1CE4F7AA76}"
+      DTS:DTSID="{B7EFC406-24B4-41AC-9A56-EC7160AB114C}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -408,7 +408,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[RAW_ClientesBanco_20210927]</property>
+                  name="OpenRowset">[dbo].[RAW_ClientesBanco_20231130]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -451,8 +451,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.DS_TRAINNING.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DS_TRAINNING.sa1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -620,7 +620,7 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
-          TopLeft="55,20" />
+          TopLeft="46,15" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -632,25 +632,25 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="52,20" />
+          TopLeft="24,36" />
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="272,23" />
+          TopLeft="263,40" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="203,42.5">
+          TopLeft="175,59">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69,0"
+              EndConnector="88,0"
               Start="0,0"
-              End="61.5,0">
+              End="80.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
+                    End="80.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -26,44 +26,26 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-R67F52J</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABWsn79EPJUWY8w+GHku3pQAAAAACAAAAAAAQZgAAAAEAACAAAADJH4Idfw5GglHiHESOYwaKbbNyNYFHRxdW8ZJqFhxOjwAAAAAOgAAAAAIAACAAAADRFhVI1ig4nFfsHzfY//gPMEGVyReIaBgI66K1KhmrXZAAAAAQ6p54at9AoFH2qEiYbRzs0x8uV1v0rC7GmT6GL0CAeGnvSk19kjvK/D/mgk0XtWfywe6BcTVsQWET+mMEJv5wL82ygtnKMcOveCMbUl8b3Kg8LnAjczFhDDhp2FKi7UxAXQr0wtiIcojFbJrIJD1h5bGzSkrNtnDcAGVyGaYNBLAMzGMYZuOXtEwPt1I2fmJAAAAAj2iRyw5CE99EbiTydq4XEUB1jN+B/ELe/23lRrrbR3rKpkrjDYzExoCJNbFX5pcSS3GmkO8YWqPYXq8HJtLsKA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgiHfeB8AYEKNSwGKPkx1ZgAAAAACAAAAAAAQZgAAAAEAACAAAACIMSp9uPOuzJ/+E13QrA56aCnUKzY17OVGkc6vSxMpUgAAAAAOgAAAAAIAACAAAABizAxzEPc5u0oepmCjMOGZ+HCIGbKHRl9whZerxqmnwJAAAABtZtNQHLehhwUo2VGjjTRoUzLku1Uqn0hHatXrM/T1B5OOsWGpdxDyNoECSLoXUIyIkA34O+B8bfvVQ8oOdiLBufCiE4HqeAq8nMd4K0o83L+4BdwsU77an7j83DiiLD49EfXBrJFGRrrwfVD34V2EaC5nZHK75iqfMMJlNckeF3XQdfjZ2ezL2bVlsbeAeqZAAAAAsnl+tw9OBrTBwTm16XbW02AdeZjjOT0dXOKN/djjCl2jlzqPcWCGDnw/t+GXQi7MkSAb3WKo74pbCfaMtwVjeg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="01 - ClientesBanco.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{32573134-5D96-4671-85BE-D176B1D5F3E0}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{257D5655-70B5-4859-BFA6-188987B9530A}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="01 - ClientesBanco.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D73892DD-4182-42DA-ABCB-DDBA831167D7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{1AD7C737-0962-42CC-931A-1300C154D851}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">01 - ClientesBanco</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{60561D94-C330-4564-B329-202E014ADEA8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{07DB2F57-DD3C-4495-88F5-375EAD5E305F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

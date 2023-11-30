@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-R67F52J</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmPDkHtyKQk2UtBzbtqETXAAAAAACAAAAAAAQZgAAAAEAACAAAACRAM0cKiryLK0Axtw1GHSfY8d1HxkEVj6UAUo/Qw8FAwAAAAAOgAAAAAIAACAAAADP3ZZ+tY/mrpFSx5vYjeJKlu/TWMSEMcS8F4KROFlfcJAAAADCf7CeUoeGBGwWnlxM8TcJGzptQjN0dFjPQITe7g1wAxcFCW8NbhqZS9w21T3Wbivrvl9L7I9JS9S7a7hbKpUZuD7zm/fWNTpwA/qTvNHC97DwvSUfzMrG4DQMCe2jRK+vrIkoQiJJOZiOGae4EjDiflnUhXOsZJluwATRck75L7896KS4bhIBsTaU5B2s3JFAAAAASYSGPmLuHewaSdL9elYPG3xxqfTA8/wNw7T9FPOEqQD9fZyTQ9/v9DXAuki3DBvyGB/RlBAKopQGUF4NR17F7A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAO27MB5Zzs0yWI8TGNmt4ewAAAAACAAAAAAAQZgAAAAEAACAAAAAsmLBshWJCFi/hm+GnoNyoRokgvblz4T4HB8so6yJXUgAAAAAOgAAAAAIAACAAAADR+nlT3dSzwJn2RbM/QqYG3jMwOtc3YRNMtG6CIM0mepAAAABHD1GCMM0egG2Yi6U4/tXGSrnqIPw/ckXGJJuQrVLiEEAUcxPmx+RIz9wgmUa1hcXG9mIyaOsDyvnG/Ms7TubI6NrmuwjqjgMyXbF5+xYsecv0DVpDDWKfiZAoXrvSWqi8mS9j1NztT938yOnbY0iski37H9Xs8u1v8GV5aypKe6ki9tkRsKyBtopRhsUdYSFAAAAArtIlu9sg/dc/cgIaUC1y/9HQbJ5KVocVs9cj44bsKsWL/kYmQvQP0dky0P/CeC6qGDckVMmhkZGw3OFWkAHdxw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -38,14 +38,14 @@
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="Arquitetura.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{7476F6C5-4066-4CB9-823F-3C608E8958A3}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Arquitetura</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{DBD702EC-8C40-4013-85CC-B3A5CA7C0197}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{153BC976-420E-4150-8CFF-063D08B5CCE4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D8EFE856-9A26-45A5-B6AB-E9837D49BA9C}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -123,7 +123,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Data Science\Data Science A Z\20210423 Clientes Banco\3 - Dados de Upload\20210927\Clientes Banco.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Data Science\universidadeDados_DSdeAaZ\Projetos DataScience\20210423 Clientes Banco\3 - Dados de Upload\20231130\Clientes Banco.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -249,7 +249,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -264,7 +264,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -275,11 +275,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;User ID=sa;Initial Catalog=DS_Trainning;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=.;User ID=sa;Initial Catalog=DS_TRAINNING;Provider=SQLNCLI11.1;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -294,7 +294,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -305,11 +305,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">DS_Trainning</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DS_TRAINNING</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.Password">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -323,7 +323,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -338,7 +338,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -353,7 +353,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_Trainning.sa.UserName">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.DS_TRAINNING.sa1.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -393,7 +393,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2021-09-27T23:37:30.6790345Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>

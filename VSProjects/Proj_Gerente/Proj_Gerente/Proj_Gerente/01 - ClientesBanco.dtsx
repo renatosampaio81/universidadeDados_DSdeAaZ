@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-R67F52J"
   DTS:CreatorName="DESKTOP-R67F52J\rsada"
-  DTS:DTSID="{D73892DD-4182-42DA-ABCB-DDBA831167D7}"
+  DTS:DTSID="{1AD7C737-0962-42CC-931A-1300C154D851}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1033"
   DTS:ObjectName="01 - ClientesBanco"
   DTS:PackageType="5"
   DTS:VersionBuild="7"
-  DTS:VersionGUID="{60561D94-C330-4564-B329-202E014ADEA8}">
+  DTS:VersionGUID="{07DB2F57-DD3C-4495-88F5-375EAD5E305F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Clientes Banco.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{C8F6A6D8-AA28-43A0-9A97-872B89BB65D3}"
+      DTS:DTSID="{285860E3-A394-4CF3-872A-F78311B2A16E}"
       DTS:ObjectName="Clientes Banco.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Customer ID"
-              DTS:DTSID="{C2CD020F-EE74-48D8-AC26-2CCDCA1D2EB8}"
+              DTS:DTSID="{59875FE8-A5E2-4364-8704-07BE3E32E24E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{D47E788F-31E6-4E8C-A133-E772F34DE51A}"
+              DTS:DTSID="{75E31222-FBEC-4E9E-940B-4DBD9E5186B0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Surname"
-              DTS:DTSID="{D0E03E70-3940-4111-A8A8-D8DD877AD0DF}"
+              DTS:DTSID="{4CB0870A-62B6-455E-AF94-D2E209E1A94D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{9D34A5CE-2ACC-42D6-9E73-1D05D3A36FAF}"
+              DTS:DTSID="{6B0077CF-2985-4234-AEB5-87466E7429D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{F8A293F4-129C-4E0D-9A50-FA5CC13A56D5}"
+              DTS:DTSID="{21F57A46-5A20-4546-9380-825C11E3741F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date Joined"
-              DTS:DTSID="{DE77CA75-916A-477F-B732-4DAB7A488BD3}"
+              DTS:DTSID="{C2F154A7-EB7D-432F-9781-3A4104EB99D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Balance"
-              DTS:DTSID="{3329CEB9-3760-4DDE-9872-1A9D38AD72D3}"
+              DTS:DTSID="{C66DCEEF-D173-45D5-9059-AEDD7DF6D88B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -102,7 +102,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.DS_Trainning.sa]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3FC6107F-0345-41CA-A741-A328A1A376F9}"
+      DTS:DTSID="{AB18D072-5C0E-46BB-8D4C-6F314C80436F}"
       DTS:ObjectName="LocalHost.DS_Trainning.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -116,7 +116,7 @@
       DTS:refId="Package\20210424 ClientesBanco"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{E361835F-D8C6-4B23-BB94-A9DC49428E03}"
+      DTS:DTSID="{5E0342DD-6165-43F7-B3F6-1ED9007FE6DA}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="20210424 ClientesBanco"
